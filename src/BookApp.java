@@ -13,5 +13,10 @@ public class BookApp {
         else {
             System.out.println("The book is out of stock");
         }
+        System.out.println();
+
+        /*BookDatabase bd = new BookDatabase();
+        Book b2 = bd.lookUpSku("Java1002");
+        System.out.println(b2.getDisplayText());*/
     }
 }

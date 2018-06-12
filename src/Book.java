@@ -6,6 +6,7 @@ public class Book {
     private String description;
     private double price;
     private boolean isInStock;
+    private String sku;
 
     //constructors
 
@@ -61,6 +62,14 @@ public class Book {
 
     public void setInStock(boolean inStock) {
         isInStock = inStock;
+    }
+
+    public String getSku() {
+        return sku;
+    }
+
+    public void setSku(String sku) {
+        this.sku = sku;
     }
 
     public String getDisplayText() {
