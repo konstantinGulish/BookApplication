@@ -1,5 +1,16 @@
 public class BookDatabase {
 
+    // instance variables
+    private Book book;
+
+    // constructors
+    public BookDatabase() {
+    }
+
+    public BookDatabase(String sku) {
+        book = lookUpSku(sku);
+    }
+
     public Book lookUpSku (String sku) {
         if (sku.equalsIgnoreCase("Java1001")) {
             return new Book("Head First Java",
