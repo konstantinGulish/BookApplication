@@ -70,6 +70,12 @@ public class Book {
 
     }
 
+    public double getBookPricing(int numberOfBooks) {
+        if (isInStock()) return getPrice() * numberOfBooks;
+        // the method will return 0 if the book is not in stock
+        else return 0; // this will be handled by the calling method
+    }
+
 
 }
 

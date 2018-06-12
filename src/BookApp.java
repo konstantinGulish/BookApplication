@@ -7,5 +7,11 @@ public class BookApp {
                 "excellent collection of science fiction short stories",
                        6.16, true );
         System.out.println(b.getDisplayText());
+        if (b.getBookPricing(10) > 0) {
+            System.out.printf("$%.2f", b.getBookPricing(10));
+        }
+        else {
+            System.out.println("The book is out of stock");
+        }
     }
 }
